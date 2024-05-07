@@ -10,10 +10,10 @@ app.use(cors());
 
 app.use(express.json());
 app.use('/api/clientes', require('../routes/rutas'));
-app.use('/api/ubicaciones', require('../routes/rutas'));
+app.use('/api/ubicaciones', require('../routes/routesUbi'));
 
-const port = process.env.PORT || 3000;
-app.listen(port,() => {
+
+app.listen(3000,() => {
     console.log('el servidor esta conectado= http://localhost:3000/ ')
 })
 
